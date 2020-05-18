@@ -203,9 +203,16 @@ ul.nav-links-obs li a {
     font-weight: 600 !important;
 }
 
-i.fa-search {
+i.fa-search,
+i.fa-bars {
     font-size: 1.6rem;
     color: #fff;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+i.fa-bars {
+    display: none;
 }
 
 .fa-search-obs {
