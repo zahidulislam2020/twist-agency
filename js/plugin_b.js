@@ -5,20 +5,41 @@
     var methods = {
         init : function(options) {
             // This is the easiest way to have default options.
-            var settings = $.extend({
-                // These are the defaults.
-                color: "#000000",
-                height: "250px",
-                width: "250px",
-                line_width: 8,
-                starting_position: 25,
-                percent: 100,
-                counter_clockwise: false,
-                percentage_b: true,
-                text: ''
-            }, options );
-            global_settings = settings;
+            var x = window.matchMedia("(max-width: 700px)")
+              x.addListener(myFunction) // Attach listener function on state changes
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    var settings = $.extend({
+                        // These are the defaults.
+                        color: "#000000",
+                        height: "100px",
+                        width: "100px",
+                        line_width: 8,
+                        starting_position: 25,
+                        percent: 100,
+                        counter_clockwise: false,
+                        percentage_b: true,
+                        text: ''
+                    }, options );
+                    global_settings = settings;
+                } else {
+                    var settings = $.extend({
+                        // These are the defaults.
+                        color: "#000000",
+                        height: "250px",
+                        width: "250px",
+                        line_width: 8,
+                        starting_position: 25,
+                        percent: 100,
+                        counter_clockwise: false,
+                        percentage_b: true,
+                        text: ''
+                    }, options );
+                    global_settings = settings;
+                }
+              }
 
+              myFunction(x) // Call listener function at run time
 
             // Create percentage
             var percentage_b = $("<div class='progress-percentage_b progress-percentage'></div>");
@@ -214,3 +235,17 @@
     };
 
 }( jQuery ));
+
+//Calling The Entire Funtion
+
+$(document).ready(function() {
+    $(".my-progress-bar-2").circularProgress_b({
+        line_width: 2,
+        color: "#0cb9be",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage_b: true,
+        text: ""
+    }).circularProgress_b('animate', 95, 5000);
+});
+

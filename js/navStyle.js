@@ -4,10 +4,10 @@ function init(){
     let query = window.matchMedia("(max-width: 960px)");
 
     if(query.matches){
-        //If the page is wider than 575px
+        //If the page is narrower or equal to 960px
 
     }else{
-        //if the page is narrower or equal to 575px
+        //if the page is wider than 960px
         const header = document.querySelector("header");
         const logo = document.querySelector(".logo-text");
         const navItems = document.querySelector(".nav-links");

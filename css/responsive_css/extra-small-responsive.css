@@ -147,5 +147,38 @@
     header.sticky-navbar:hover .fa-search {
         color: #fff !important;
     }
+
+    /*=====Progress Bar=====*/
+
+    .skill-section-heading > p {
+        font-size: 1.4rem;
+    }
+
+    .progress-percentage/*, .progress-text*/ {
+        padding: 0px 2rem;
+    }
+
+    .progress-percentage {
+        font-size: 1.4rem;
+    }
+
+    p.font-20-progress-bar {
+        font-size: 1.4rem;
+    }
+
+    div.skill-section {
+        height: 45vh;
+        padding: 2.5rem;
+        /*background-color: saddlebrown;*/
+    }
+
+    div.skill-section-heading {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    p.font-14-skil {
+        font-size: 1.2rem;
+    }
 }
 
