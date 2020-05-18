@@ -737,7 +737,6 @@ div.parent > .front {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     text-shadow: 0px -1px 1px rgba(0,0,0,0.2);
-    font-weight: 400;
 }
 
 div.parent > .back {
@@ -753,7 +752,6 @@ div.parent > .back {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     text-shadow: 0px -1px 1px rgba(0,0,0,0.2);
-    font-weight: 400;
 }
 
 div.parent:hover > .front {
