@@ -1,9 +1,11 @@
 @media (max-width: 575px) {
     div.header-section {
+        background: rgba(0, 0, 0, 0.9);
+        background-blend-mode: multiply;
         width: 100%;
-        height: 100vh;
+        height: auto;
         background-repeat: no-repeat;
-        background-size: 100% 50%;
+        background-size: 100% 55%;
         background-position: top center;
         background-attachment: none;
     }
@@ -39,11 +41,10 @@
     ul.nav-links {
         width: 100%;
         margin-top: 4.5rem;
-        /* margin-left: -9rem; */
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center; */
+        align-items: center;
         display: block;
         /* border: 1px solid red; */
         /* display: none; */
@@ -113,26 +114,26 @@
     }
 
     div.header-description-flex {
-        width: 85%;
+        width: 65%;
         height: 20%;
-        margin: 5rem auto 0;
+        margin: 2rem auto 0;
         display: flex;
         align-items: flex-end;
         border: 1px solid red;
     }
     
     div.header-description-flex > div {
-        font-size: 3rem;
-        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 500;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
         word-spacing: 0.5rem;
         color: #fff;
     }
 
     header.sticky-navbar:hover {
         background: transparent;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     }
     
     header.sticky-navbar:hover a.monogram-link table {
@@ -140,12 +141,39 @@
     }
     
     header.sticky-navbar:hover ul.nav-links li a {
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         color: #fff;
     }
     
     header.sticky-navbar:hover .fa-search {
         color: #fff !important;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 12rem;
+        height: 2rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-radius: 3rem;
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid #0cb9be;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .btn:hover {
+        background-color: #0cb9be;
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 12rem;
+        height: 2rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-radius: 3rem;
+        cursor: pointer;
+        color: #000;
     }
 
     /*=====Progress Bar=====*/
@@ -179,6 +207,75 @@
 
     p.font-14-skil {
         font-size: 1.2rem;
+    }
+
+    /*===== About Area =====*/
+
+    /*===Left Part===*/
+
+    div.about-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 3rem auto;
+        /*background-color: blueviolet;*/
+    }
+    
+    div.about-section-left {
+        width: 50%;
+        /*background-color: aqua;*/
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    div.about-section-left-top-part p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    div.about-section-left-top-part p:first-child {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    div.about-section-left-bottom-part {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        width: 90vw;
+        /* border: 1px solid red; */
+    }
+    
+    div.about-section-left-bottom-left-side,
+    div.about-section-left-bottom-right-side {
+        width: 50%;
+        /*background: rgb(212, 39, 39);*/
+        text-align: center;
+        line-height: 1.3;
+        font-size: 1.4rem !important;
+        padding: 1rem;
+    }
+
+    div.about-section-left-bottom-left-side p,
+    div.about-section-left-bottom-right-side p {
+        font-size: 1.4rem !important;
+    }
+    
+    i.fa-diamond, i.fa-shield-alt {
+        font-size: 2rem;
+        color: #0cb9be;
+        margin-bottom: 1rem;
+    }
+    
+    .about-section-left-bottom-left-side-font-14,
+    .about-section-left-bottom-right-side-font-14 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
     }
 }
 
